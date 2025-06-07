@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalWarfare", "DigitalWarfare\DigitalWarfare.csproj", "{3CE253A4-1BE1-42A6-88DC-25DC041969A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CE253A4-1BE1-42A6-88DC-25DC041969A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE253A4-1BE1-42A6-88DC-25DC041969A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE253A4-1BE1-42A6-88DC-25DC041969A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE253A4-1BE1-42A6-88DC-25DC041969A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D717BE80-FA2A-4025-A6AB-DF6C18EE347D}
+	EndGlobalSection
+EndGlobal

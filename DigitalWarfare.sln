@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalWarfare", "DigitalWarfare\DigitalWarfare.csproj", "{3CE253A4-1BE1-42A6-88DC-25DC041969A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalWarfare", "DigitalWarfare\DigitalWarfare.csproj", "{3CE253A4-1BE1-42A6-88DC-25DC041969A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7D8CC3B5-DF07-44C8-BCF7-0451CE2DD27D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

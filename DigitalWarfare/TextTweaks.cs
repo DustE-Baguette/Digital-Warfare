@@ -22,30 +22,26 @@ namespace DigitalWarfare
             Console.ResetColor();
         }
 
-        // Returns single line text thats centred
+        // Returns single line text thats centered
         public static string CentreLine(string text)
         {
             return (string.Format("{0," + ((Console.WindowWidth / 2) + (text.Length / 2)) + "}", text));
         }
 
+        // Returns multi-line text thats centered
         public static string[] CentreGroup(string text)
         {
             var lines = text.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None);
+            List<string> centredLines = new List<string>();
 
-            // Complicated mulit-line strings
             foreach (var line in lines)
             {
-                int leftPadding = Math.Max((Console.WindowWidth - line.Length) / 2, 0);
-                Console.Write(new string(' ', leftPadding));
-
-                foreach (char c in line)
-                {
-                    Console.Write(c);
-                }
-                Console.WriteLine();
+                int padding = Math.Max((Console.WindowWidth - line.Length) / 2, 0);
+                string centredLine = new string(' ', padding) + line;
+                centredLines.Add(centredLine);
             }
 
-            return lines;
+            return centredLines.ToArray();
         }
 
         public static string[] BuildButton(string text)
@@ -68,7 +64,7 @@ namespace DigitalWarfare
                 string caps = "+---------------+";
                 string middle = '|' + new string(' ', (int)padding) + text + new string(' ', (int)padding) + '|';
 
-                return new[] {caps, middle, caps };
+                return new[] { caps, middle, caps };
             }
         }
 

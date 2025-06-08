@@ -8,7 +8,7 @@ using System.Diagnostics;
 
 namespace DigitalWarfare
 {
-    public static class ConsoleTweaks
+    public class ConsoleTweaks
     {
         [DllImport("kernel32.dll", SetLastError = true)]
         static extern IntPtr GetConsoleWindow();
@@ -17,10 +17,21 @@ namespace DigitalWarfare
         static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
 
         [DllImport("user32.dll", SetLastError = true)]
+        static extern int GetWindowLong(IntPtr hWnd, int nIndex);
+
+        [DllImport("user32.dll")]
+        static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
+
+        [DllImport("user32.dll", SetLastError = true)]
         static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
 
         const uint SWP_NOSIZE = 0x0001;
         const uint SWP_NOZORDER = 0x0004;
+        const int SWP_NOMOVE = 0x0002;
+        const int SWP_FRAMECHANGED = 0x0020;
+        const int GWL_STYLE = -16;
+        const int WS_SIZEBOX = 0x00040000;
+        const int WS_MAXIMIZEBOX = 0x00010000;
 
         private static Size GetScreenSize() => new Size(GetSystemMetrics(0), GetSystemMetrics(1));
 
@@ -77,6 +88,15 @@ namespace DigitalWarfare
             int y = (screenSize.Height - windowSize.Height) / 2;
 
             SetWindowPos(window, IntPtr.Zero, x, y, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
+        }
+
+        public static void DisableResize()
+        {
+            IntPtr consoleHandle = GetConsoleWindow();
+            int style = GetWindowLong(consoleHandle, GWL_STYLE);
+            style &= ~WS_SIZEBOX;       // disable resizable border
+            style &= ~WS_MAXIMIZEBOX;   // disable maximize button
+            SetWindowLong(consoleHandle, GWL_STYLE, style);
         }
     }
 }

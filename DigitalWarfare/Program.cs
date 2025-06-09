@@ -42,7 +42,8 @@
                 Console.WriteLine(new string('=', Console.WindowWidth));
             }
 
-            TextTweaks.TypeOut("lognbk asdjklasd aqwieoiqwbn hjasllas", ConsoleColor.Magenta, 35);
+            StringText testLine = new StringText(0, 7, "TESTTESTTESTTEST TEST TEST TEST TEST TESTTEST...", "TypeOut", ConsoleColor.Yellow);
+            testLine.DrawText();
             Console.WriteLine();
 
             Button upperButton = new Button(75, 10, "Upper", ConsoleColor.White, true);
@@ -51,33 +52,43 @@
             buttonList.Add(upperButton);
             buttonList.Add(lowerButton);
 
+            upperButton.OnClick = () => { Console.Clear(); Console.WriteLine("Upper btn clicked"); };
+            lowerButton.OnClick = () => { Console.Clear(); Console.WriteLine("Lower btn clicked"); };
+
             currentSelected = upperButton;
 
-            while (true)
-            {
-                var key = Console.ReadKey(true).Key;
+            ButtonSelection();
 
-                switch (key)
+            // Called when button selection is required. Takes control of console
+            void ButtonSelection()
+            {
+                while (true)
                 {
-                    case ConsoleKey.W:
-                        CheckButton(0, -1);
-                        break;
-                    case ConsoleKey.S:
-                        CheckButton(0, +1);
-                        break;
-                    case ConsoleKey.D:
-                        CheckButton(-1, 0);
-                        break;
-                    case ConsoleKey.A:
-                        CheckButton(+1, 0);
-                        break;
-                    case ConsoleKey.Enter: // Return on enter press
-                        Console.Clear();
-                        // Check what button is pressed.
-                        return;
+                    var key = Console.ReadKey(true).Key;
+
+                    switch (key)
+                    {
+                        case ConsoleKey.W:
+                            CheckButton(0, -1);
+                            break;
+                        case ConsoleKey.S:
+                            CheckButton(0, +1);
+                            break;
+                        case ConsoleKey.D:
+                            CheckButton(-1, 0);
+                            break;
+                        case ConsoleKey.A:
+                            CheckButton(+1, 0);
+                            break;
+                        case ConsoleKey.Enter: // Return on enter press
+                            Console.Clear();
+                            currentSelected.Click();
+                            return;
+                    }
                 }
             }
 
+            // Takes the change in X and Y and finds the nearest button in the changed direction
             void CheckButton(int xChange, int yChange)
             {
                 int minDist = int.MaxValue;
@@ -85,7 +96,7 @@
 
                 foreach (Button button in buttonList)
                 {
-                    if (button == currentSelected) continue;
+                    if (button == currentSelected) continue; // If no other button in selected direction
 
                     if ((xChange != 0 && Math.Sign(button.X - currentSelected.X) != xChange) || (yChange != 0 && Math.Sign(button.Y - currentSelected.Y) != yChange)) continue;
 
@@ -97,6 +108,7 @@
                     }
                 }
 
+                // Deselects previously selected button, then selects new one
                 if (closestButton != null)
                 {
                     currentSelected.CheckSelection();

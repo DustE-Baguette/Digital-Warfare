@@ -3,7 +3,6 @@ C:\Code\DigitalWarfare\DigitalWarfare\DigitalWarfare\bin\Debug\net7.0\DigitalWar
 C:\Code\DigitalWarfare\DigitalWarfare\DigitalWarfare\bin\Debug\net7.0\DigitalWarfare.runtimeconfig.json
 C:\Code\DigitalWarfare\DigitalWarfare\DigitalWarfare\bin\Debug\net7.0\DigitalWarfare.dll
 C:\Code\DigitalWarfare\DigitalWarfare\DigitalWarfare\bin\Debug\net7.0\DigitalWarfare.pdb
-C:\Code\DigitalWarfare\DigitalWarfare\DigitalWarfare\obj\Debug\net7.0\DigitalWarfare.csproj.AssemblyReference.cache
 C:\Code\DigitalWarfare\DigitalWarfare\DigitalWarfare\obj\Debug\net7.0\DigitalWarfare.GeneratedMSBuildEditorConfig.editorconfig
 C:\Code\DigitalWarfare\DigitalWarfare\DigitalWarfare\obj\Debug\net7.0\DigitalWarfare.AssemblyInfoInputs.cache
 C:\Code\DigitalWarfare\DigitalWarfare\DigitalWarfare\obj\Debug\net7.0\DigitalWarfare.AssemblyInfo.cs
@@ -13,3 +12,4 @@ C:\Code\DigitalWarfare\DigitalWarfare\DigitalWarfare\obj\Debug\net7.0\refint\Dig
 C:\Code\DigitalWarfare\DigitalWarfare\DigitalWarfare\obj\Debug\net7.0\DigitalWarfare.pdb
 C:\Code\DigitalWarfare\DigitalWarfare\DigitalWarfare\obj\Debug\net7.0\DigitalWarfare.genruntimeconfig.cache
 C:\Code\DigitalWarfare\DigitalWarfare\DigitalWarfare\obj\Debug\net7.0\ref\DigitalWarfare.dll
+C:\Code\DigitalWarfare\DigitalWarfare\DigitalWarfare\obj\Debug\net7.0\DigitalWarfare.sourcelink.json

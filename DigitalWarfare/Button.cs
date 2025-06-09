@@ -14,6 +14,8 @@ namespace DigitalWarfare
         ConsoleColor _colour;
         private bool _selected;
 
+        public Action OnClick;
+
         public Button(int x, int y, string text, ConsoleColor colour, bool selected)
         {
             X = x;
@@ -55,7 +57,7 @@ namespace DigitalWarfare
             set { _selected = value; }
         }
 
-        private void DrawButton()
+        public void DrawButton()
         {
             if (Selected)
             {
@@ -76,6 +78,12 @@ namespace DigitalWarfare
             ConsoleColor changeColour = Selected ? ConsoleColor.Green : ConsoleColor.White;
 
             TextTweaks.PrintButtonAt(Text, X, Y, changeColour);
+        }
+
+        // Event thats called when a button is... clicked!
+        public void Click()
+        {
+            OnClick?.Invoke();
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace DigitalWarfare
 {
@@ -66,6 +67,31 @@ namespace DigitalWarfare
             {
                 Console.SetCursorPosition(X, Y);
                 TextTweaks.TypeOut(Text, Colour, 40);
+            }
+            else if (Type == "Group") // Muli-line text at a specific pos
+            {
+                var lines = Text.Split(new string[] { "\r\n", "\n" }, StringSplitOptions.None);
+
+                for (int i = 0; i < lines.Length; i++)
+                {
+                    var line = lines[i];
+
+                    Console.SetCursorPosition(X, Y + i);
+                    Console.WriteLine(line);
+                }
+
+            }
+            else if (Type == "GroupCentered")
+            {
+                string[] textGroup = TextTweaks.CentreGroup(Text);
+
+                for (int i = 0; i < textGroup.Length; i++)
+                {
+                    var text = textGroup[i];
+
+                    Console.SetCursorPosition(0, Y + i);
+                    Console.WriteLine(text);
+                }
             }
             else // Regular text at a specific pos
             {

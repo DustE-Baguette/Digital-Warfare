@@ -9,6 +9,7 @@ namespace DigitalWarfare
     public class MenuManager
     {
         private MenuState _currentState;
+        public static List<MenuState> allMenus = new List<MenuState>();
 
         public MenuManager(MenuState currentState)
         {

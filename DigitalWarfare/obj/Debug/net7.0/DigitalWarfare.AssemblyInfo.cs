@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DigitalWarfare")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4dc88086671b38d3c8ccba5f29e38b5c6ec17cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+056a575f38068d2eb8622275d15e7edcfdfa5508")]
 [assembly: System.Reflection.AssemblyProductAttribute("DigitalWarfare")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DigitalWarfare")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

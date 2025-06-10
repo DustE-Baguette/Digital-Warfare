@@ -13,10 +13,11 @@ namespace DigitalWarfare
         private string _text;
         ConsoleColor _colour;
         private bool _selected;
+        private bool _centered;
 
         public Action OnClick;
 
-        public Button(int x, int y, string text, ConsoleColor colour, bool selected)
+        public Button(int x, int y, string text, ConsoleColor colour, bool selected, bool centered)
         {
             X = x;
             Y = y;
@@ -24,7 +25,7 @@ namespace DigitalWarfare
             Colour = colour;
 
             Selected = selected;
-            DrawButton();
+            Centered = centered;
         }
 
         public int X
@@ -57,27 +58,51 @@ namespace DigitalWarfare
             set { _selected = value; }
         }
 
+        private bool Centered
+        {
+            get { return _centered; }
+            set { _centered = value; }
+        }
+
         public void DrawButton()
         {
-            if (Selected)
+            if (Centered)
             {
-                TextTweaks.PrintButtonAt(Text, X, Y, ConsoleColor.Green);
+                Console.ForegroundColor = Selected ? ConsoleColor.Green : Colour;
+
+                var button = TextTweaks.BuildButton(Text);
+
+                for (int i = 0; i < 3; i++)
+                {
+                    int padding = Math.Max((Console.WindowWidth - button[i].Length) / 2, 0);
+
+                    Console.SetCursorPosition(0, Y + i);
+
+                    string centeredButton = new string(' ', padding) + button[i];
+                    Console.WriteLine(centeredButton);
+                }
+
+                Console.ResetColor();
             }
             else
             {
-                TextTweaks.PrintButtonAt(Text, X, Y, Colour);
+                if (Selected)
+                {
+                    TextTweaks.PrintButtonAt(Text, X, Y, ConsoleColor.Green);
+                }
+                else
+                {
+                    TextTweaks.PrintButtonAt(Text, X, Y, Colour);
+                }
             }
-            
         }
 
-        // Change selection value and depending colour
+        // Change selection value and re-draw button
         public void CheckSelection()
         {
             Selected = !Selected;
 
-            ConsoleColor changeColour = Selected ? ConsoleColor.Green : ConsoleColor.White;
-
-            TextTweaks.PrintButtonAt(Text, X, Y, changeColour);
+            DrawButton();
         }
 
         // Event thats called when a button is... clicked!

@@ -27,7 +27,7 @@
                 Console.WriteLine(ex.Message);
             }
 
-            SetTitleScreen();
+            //SetTitleScreen();
 
             void SetTitleScreen()
             {
@@ -42,12 +42,21 @@
                 Console.WriteLine(new string('=', Console.WindowWidth));
             }
 
+            string title = " _____    __   ______   __   ______  ______   __           __     __   ______   ______   ______  ______   ______   ______    \r\n/\\  __-. /\\ \\ /\\  ___\\ /\\ \\ /\\__  _\\/\\  __ \\ /\\ \\         /\\ \\  _ \\ \\ /\\  __ \\ /\\  == \\ /\\  ___\\/\\  __ \\ /\\  == \\ /\\  ___\\   \r\n\\ \\ \\/\\ \\\\ \\ \\\\ \\ \\__ \\\\ \\ \\\\/_/\\ \\/\\ \\  __ \\\\ \\ \\____    \\ \\ \\/ \".\\ \\\\ \\  __ \\\\ \\  __< \\ \\  __\\\\ \\  __ \\\\ \\  __< \\ \\  __\\   \r\n \\ \\____- \\ \\_\\\\ \\_____\\\\ \\_\\  \\ \\_\\ \\ \\_\\ \\_\\\\ \\_____\\    \\ \\__/\".~\\_\\\\ \\_\\ \\_\\\\ \\_\\ \\_\\\\ \\_\\   \\ \\_\\ \\_\\\\ \\_\\ \\_\\\\ \\_____\\ \r\n  \\/____/  \\/_/ \\/_____/ \\/_/   \\/_/  \\/_/\\/_/ \\/_____/     \\/_/   \\/_/ \\/_/\\/_/ \\/_/ /_/ \\/_/    \\/_/\\/_/ \\/_/ /_/ \\/_____/ \r\n";
+
+
+            StringText titleTest = new StringText(0, 20, title, "GroupCentered", ConsoleColor.DarkGreen);
+            titleTest.DrawText();
+
             StringText testLine = new StringText(0, 7, "TESTTESTTESTTEST TEST TEST TEST TEST TESTTEST...", "TypeOut", ConsoleColor.Yellow);
             testLine.DrawText();
             Console.WriteLine();
 
-            Button upperButton = new Button(75, 10, "Upper", ConsoleColor.White, true);
-            Button lowerButton = new Button(75, 15, "Lower", ConsoleColor.White, false);
+            Button upperButton = new Button(0, 10, "Upper", ConsoleColor.White, true, true);
+            Button lowerButton = new Button(75, 15, "Lower", ConsoleColor.White, false, false);
+
+            upperButton.DrawButton();
+            lowerButton.DrawButton();
 
             buttonList.Add(upperButton);
             buttonList.Add(lowerButton);

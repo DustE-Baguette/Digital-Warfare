@@ -8,7 +8,7 @@ using System.Diagnostics;
 
 namespace DigitalWarfare
 {
-    public class ConsoleTweaks
+    public static class ConsoleTweaks
     {
         [DllImport("kernel32.dll", SetLastError = true)]
         static extern IntPtr GetConsoleWindow();

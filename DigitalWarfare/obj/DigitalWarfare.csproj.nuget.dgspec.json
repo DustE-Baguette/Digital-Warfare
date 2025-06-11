@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code\\DigitalWarfare\\DigitalWarfare\\DigitalWarfare\\DigitalWarfare.csproj": {}
+    "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\DigitalWarfare.csproj": {}
   },
   "projects": {
-    "C:\\Code\\DigitalWarfare\\DigitalWarfare\\DigitalWarfare\\DigitalWarfare.csproj": {
+    "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\DigitalWarfare.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\DigitalWarfare\\DigitalWarfare\\DigitalWarfare\\DigitalWarfare.csproj",
+        "projectUniqueName": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\DigitalWarfare.csproj",
         "projectName": "DigitalWarfare",
-        "projectPath": "C:\\Code\\DigitalWarfare\\DigitalWarfare\\DigitalWarfare\\DigitalWarfare.csproj",
-        "packagesPath": "C:\\Users\\DustE\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\DigitalWarfare\\DigitalWarfare\\DigitalWarfare\\obj\\",
+        "projectPath": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\DigitalWarfare.csproj",
+        "packagesPath": "C:\\Users\\duste\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DustE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\duste\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

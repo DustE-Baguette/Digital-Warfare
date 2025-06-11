@@ -46,15 +46,34 @@ namespace DigitalWarfare
         {
             if (CurrentState != null)
             {
+                HashSet<Button> drawnButtons = new HashSet<Button>();
+
                 foreach (Button button in CurrentState.containedButtons)
                 {
-                    button.DrawButton();
+                    if (drawnButtons.Contains(button)) continue;
+
+                    if (button.Link != null)
+                    {
+                        List<Button> linkedGroup = GetLinkedGroup(button);
+                        TextTweaks.PrintLinkedButtons(linkedGroup);
+
+                        foreach (Button BTN in linkedGroup)
+                        {
+                            drawnButtons.Add(BTN);
+                        }
+                    }
+                    else
+                    {
+                        button.DrawButton();
+                    }
 
                     if (button.Selected)
                     {
                         CurrentSelected = button;
                     }
                 }
+
+                drawnButtons.Clear();
 
                 foreach (StringText text in CurrentState.containedStrings)
                 {
@@ -63,6 +82,20 @@ namespace DigitalWarfare
             }
 
             ButtonSelection();
+        }
+
+        private List<Button> GetLinkedGroup(Button button)
+        {
+            var group = new List<Button>();
+            var current = button;
+
+            while (current != null && !group.Contains(current))
+            {
+                group.Add(current);
+                current = current.Link;
+            }
+
+            return group;
         }
 
         // Called when button selection is required. Takes control of console
@@ -81,10 +114,10 @@ namespace DigitalWarfare
                         CheckButton(0, +1);
                         break;
                     case ConsoleKey.D:
-                        CheckButton(-1, 0);
+                        CheckButton(+1, 0);
                         break;
                     case ConsoleKey.A:
-                        CheckButton(+1, 0);
+                        CheckButton(-1, 0);
                         break;
                     case ConsoleKey.Enter: // Return on enter press
                         Console.Clear();
@@ -104,7 +137,11 @@ namespace DigitalWarfare
             {
                 if (button == CurrentSelected) continue; // If no other button in selected direction
 
-                if ((xChange != 0 && Math.Sign(button.X - CurrentSelected.X) != xChange) || (yChange != 0 && Math.Sign(button.Y - CurrentSelected.Y) != yChange)) continue;
+                if (xChange != 0 && (button.Y != CurrentSelected.Y || Math.Sign(button.X - CurrentSelected.X) != xChange))
+                    continue;
+
+                if (yChange != 0 && (button.X != CurrentSelected.X || Math.Sign(button.Y - CurrentSelected.Y) != yChange))
+                    continue;
 
                 int distance = Math.Abs(button.X - CurrentSelected.X) + Math.Abs(button.Y - CurrentSelected.Y);
                 if (distance < minDist)
@@ -117,9 +154,28 @@ namespace DigitalWarfare
             // Deselects previously selected button, then selects new one
             if (closestButton != null)
             {
-                CurrentSelected.CheckSelection();
+                CurrentSelected.Selected = false;
+                closestButton.Selected = true;
+
+                if (closestButton.Link != null)
+                {
+                    TextTweaks.PrintLinkedButtons(closestButton.linkedList);
+                }
+                else
+                {
+                    closestButton.DrawButton();
+                }
+
+                if (CurrentSelected.Link != null)
+                {
+                    TextTweaks.PrintLinkedButtons(CurrentSelected.linkedList);
+                }
+                else
+                {
+                    CurrentSelected.DrawButton();
+                }
+                
                 CurrentSelected = closestButton;
-                CurrentSelected.CheckSelection();
             }
         }
     }

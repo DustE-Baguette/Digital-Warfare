@@ -14,6 +14,9 @@ namespace DigitalWarfare
         ConsoleColor _colour;
         private bool _selected;
         private bool _centered;
+        private Button _link;
+
+        public List<Button> linkedList = new List<Button>();
 
         public Action OnClick;
 
@@ -23,7 +26,6 @@ namespace DigitalWarfare
             Y = y;
             Text = text;
             Colour = colour;
-
             Selected = selected;
             Centered = centered;
         }
@@ -64,6 +66,12 @@ namespace DigitalWarfare
             set { _centered = value; }
         }
 
+        public Button Link
+        {
+            get { return _link; }
+            set { _link = value; }
+        }
+
         public void DrawButton()
         {
             if (Centered)
@@ -95,14 +103,6 @@ namespace DigitalWarfare
                     TextTweaks.PrintButtonAt(Text, X, Y, Colour);
                 }
             }
-        }
-
-        // Change selection value and re-draw button
-        public void CheckSelection()
-        {
-            Selected = !Selected;
-
-            DrawButton();
         }
 
         // Event thats called when a button is... clicked!

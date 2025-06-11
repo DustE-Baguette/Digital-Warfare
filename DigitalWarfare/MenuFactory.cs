@@ -27,10 +27,34 @@ namespace DigitalWarfare
 
             Button quitBTN = new Button(0, 20, "Exit", ConsoleColor.White, false, true);
             buttons.Add(quitBTN);
-            quitBTN.OnClick = () => { Environment.Exit(0); };
+            quitBTN.OnClick = () => { menuManager.SetState(ConfirmationMenu(menuManager)); };
 
             MenuState launchMenu = new MenuState(buttons, stringTexts);
             return launchMenu;
+        }
+
+        public static MenuState ConfirmationMenu(MenuManager menuManager)
+        {
+            List<Button> buttons = new List<Button>();
+            List<StringText> stringTexts = new List<StringText>();
+
+            StringText confirmaionText = new StringText(0, 5, "Are you sure you want to quit?", "Centered", ConsoleColor.White);
+            stringTexts.Add(confirmaionText);
+
+            Button yesBTN = new Button(0, 10, "Oui", ConsoleColor.White, false, false);
+            buttons.Add(yesBTN);
+            yesBTN.OnClick = () => { Environment.Exit(0); };
+
+            Button noBTN = new Button(0, 10, "Non", ConsoleColor.White, true, false);
+            buttons.Add(noBTN);
+            noBTN.OnClick = () => { menuManager.SetState(LaunchMenu(menuManager)); };
+
+            List<Button> linkedButtons = new List<Button> { yesBTN, noBTN };
+            yesBTN.linkedList = linkedButtons;
+            noBTN.linkedList = linkedButtons;
+
+            MenuState confirmationMenu = new MenuState(buttons, stringTexts);
+            return confirmationMenu;
         }
 
         public static MenuState SelectionMenu(MenuManager menuManager)

@@ -46,26 +46,17 @@ namespace DigitalWarfare
 
         public static string[] BuildButton(string text)
         {
-            if (text.Length % 2 == 0) // Even length
-            {
-                double padding = (16 - text.Length);
-                padding = Math.Round(padding / 2);
+            const int totalWidth = 17;
+            const int innerWidth = totalWidth - 2;
 
-                string caps = "+----------------+";
-                string middle = '|' + new string(' ', (int)padding) + text + new string(' ', (int)padding) + '|';
+            int totalPadding = innerWidth - text.Length;
+            int leftPadding = totalPadding / 2;
+            int rightPadding = totalPadding - leftPadding;
 
-                return new[] { caps, middle, caps };
-            }
-            else // Odd length
-            {
-                double padding = (15 - text.Length);
-                padding = Math.Round(padding / 2);
+            string caps = "+" + new string('-', innerWidth) + "+";
+            string middle = "|" + new string(' ', leftPadding) + text + new string(' ', rightPadding) + "|";
 
-                string caps = "+---------------+";
-                string middle = '|' + new string(' ', (int)padding) + text + new string(' ', (int)padding) + '|';
-
-                return new[] { caps, middle, caps };
-            }
+            return new[] { caps, middle, caps };
         }
 
         public static void PrintButtonAt(string text, int x, int y, ConsoleColor colour)
@@ -81,6 +72,27 @@ namespace DigitalWarfare
             }
 
             Console.ResetColor();
+        }
+
+        public static void PrintLinkedButtons(List<Button> linkedButtons)
+        {
+            const int buttonWidth = 17;
+            const int spacing = 3;
+
+            int totalWidth = buttonWidth * linkedButtons.Count + (linkedButtons.Count - 1) * spacing;
+
+            int startX = (Console.WindowWidth - totalWidth) / 2;
+            int y = linkedButtons[0].Y;
+
+            for (int i = 0; i < linkedButtons.Count; i++)
+            {
+                linkedButtons[i].linkedList = linkedButtons;
+
+                int x = startX + i * (buttonWidth + spacing);
+                linkedButtons[i].X = x;
+                linkedButtons[i].Y = y;
+                linkedButtons[i].DrawButton();
+            }
         }
     }
 }

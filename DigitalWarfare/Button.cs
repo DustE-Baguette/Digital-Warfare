@@ -14,9 +14,6 @@ namespace DigitalWarfare
         ConsoleColor _colour;
         private bool _selected;
         private bool _centered;
-        private Button _link;
-
-        public List<Button> linkedList = new List<Button>();
 
         public Action OnClick;
 
@@ -64,12 +61,6 @@ namespace DigitalWarfare
         {
             get { return _centered; }
             set { _centered = value; }
-        }
-
-        public Button Link
-        {
-            get { return _link; }
-            set { _link = value; }
         }
 
         public void DrawButton()

@@ -46,56 +46,25 @@ namespace DigitalWarfare
         {
             if (CurrentState != null)
             {
-                HashSet<Button> drawnButtons = new HashSet<Button>();
-
                 foreach (Button button in CurrentState.containedButtons)
                 {
-                    if (drawnButtons.Contains(button)) continue;
-
-                    if (button.Link != null)
-                    {
-                        List<Button> linkedGroup = GetLinkedGroup(button);
-                        TextTweaks.PrintLinkedButtons(linkedGroup);
-
-                        foreach (Button BTN in linkedGroup)
-                        {
-                            drawnButtons.Add(BTN);
-                        }
-                    }
-                    else
-                    {
-                        button.DrawButton();
-                    }
-
-                    if (button.Selected)
-                    {
-                        CurrentSelected = button;
-                    }
+                    button.DrawButton();
                 }
-
-                drawnButtons.Clear();
 
                 foreach (StringText text in CurrentState.containedStrings)
                 {
                     text.DrawText();
                 }
+
+                foreach (ButtonGroup group in CurrentState.containedGroups)
+                {
+                    group.DrawGroup();
+                }
+
+                CurrentSelected = CurrentState.Selected;
             }
 
             ButtonSelection();
-        }
-
-        private List<Button> GetLinkedGroup(Button button)
-        {
-            var group = new List<Button>();
-            var current = button;
-
-            while (current != null && !group.Contains(current))
-            {
-                group.Add(current);
-                current = current.Link;
-            }
-
-            return group;
         }
 
         // Called when button selection is required. Takes control of console
@@ -133,7 +102,22 @@ namespace DigitalWarfare
             int minDist = int.MaxValue;
             Button closestButton = null;
 
+            List<Button> totalButtons = new List<Button>();
+            
             foreach (Button button in CurrentState.containedButtons)
+            {
+                totalButtons.Add(button);
+            }
+
+            foreach (ButtonGroup buttonGroup in CurrentState.containedGroups)
+            {
+                foreach (Button button in buttonGroup.GroupList)
+                {
+                    totalButtons.Add(button);
+                }
+            }
+
+            foreach (Button button in totalButtons)
             {
                 if (button == CurrentSelected) continue; // If no other button in selected direction
 
@@ -157,24 +141,9 @@ namespace DigitalWarfare
                 CurrentSelected.Selected = false;
                 closestButton.Selected = true;
 
-                if (closestButton.Link != null)
-                {
-                    TextTweaks.PrintLinkedButtons(closestButton.linkedList);
-                }
-                else
-                {
-                    closestButton.DrawButton();
-                }
+                closestButton.DrawButton();
+                CurrentSelected.DrawButton();
 
-                if (CurrentSelected.Link != null)
-                {
-                    TextTweaks.PrintLinkedButtons(CurrentSelected.linkedList);
-                }
-                else
-                {
-                    CurrentSelected.DrawButton();
-                }
-                
                 CurrentSelected = closestButton;
             }
         }

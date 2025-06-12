@@ -74,24 +74,25 @@ namespace DigitalWarfare
             Console.ResetColor();
         }
 
-        public static void PrintLinkedButtons(List<Button> linkedButtons)
+        public static void PrintGroupedButtons(List<Button> groupedButtons, int y)
         {
             const int buttonWidth = 17;
             const int spacing = 3;
 
-            int totalWidth = buttonWidth * linkedButtons.Count + (linkedButtons.Count - 1) * spacing;
-
+            int totalWidth = buttonWidth * groupedButtons.Count + (groupedButtons.Count - 1) * spacing;
             int startX = (Console.WindowWidth - totalWidth) / 2;
-            int y = linkedButtons[0].Y;
 
-            for (int i = 0; i < linkedButtons.Count; i++)
+            for (int i = 0; i < groupedButtons.Count; i++)
             {
-                linkedButtons[i].linkedList = linkedButtons;
+                int x = startX + i * (spacing + buttonWidth);
+                var button = groupedButtons[i];
 
-                int x = startX + i * (buttonWidth + spacing);
-                linkedButtons[i].X = x;
-                linkedButtons[i].Y = y;
-                linkedButtons[i].DrawButton();
+                ConsoleColor buttonColour = groupedButtons[i].Selected ? ConsoleColor.Green : ConsoleColor.White;
+
+                groupedButtons[i].X = x;
+                groupedButtons[i].Y = y;
+
+                PrintButtonAt(groupedButtons[i].Text, x, y, buttonColour);
             }
         }
     }

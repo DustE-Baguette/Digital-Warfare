@@ -42,12 +42,18 @@ namespace DigitalWarfare
             DisplayState();
         }
 
+        // Displays all buttons and text elements onto console
         public void DisplayState()
         {
             if (CurrentState != null)
             {
                 foreach (Button button in CurrentState.containedButtons)
                 {
+                    if (button == CurrentState.Selected)
+                    {
+                        button.Selected = true;
+                    }
+
                     button.DrawButton();
                 }
 
@@ -58,6 +64,14 @@ namespace DigitalWarfare
 
                 foreach (ButtonGroup group in CurrentState.containedGroups)
                 {
+                    foreach (Button button in group.GroupList)
+                    {
+                        if (button == CurrentState.Selected)
+                        {
+                            button.Selected = true;
+                        }
+                    }
+
                     group.DrawGroup();
                 }
 

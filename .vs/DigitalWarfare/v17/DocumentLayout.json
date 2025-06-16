@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|d:\\work\\digitalwarfare\\digital-warfare\\digitalwarfare\\texttweaks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|solutionrelative:digitalwarfare\\texttweaks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|d:\\work\\digitalwarfare\\digital-warfare\\digitalwarfare\\menufactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|solutionrelative:digitalwarfare\\menufactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|d:\\work\\digitalwarfare\\digital-warfare\\digitalwarfare\\buttongroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|solutionrelative:digitalwarfare\\buttongroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|d:\\work\\digitalwarfare\\digital-warfare\\digitalwarfare\\pilotgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|solutionrelative:digitalwarfare\\pilotgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|d:\\work\\digitalwarfare\\digital-warfare\\digitalwarfare\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|solutionrelative:digitalwarfare\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|d:\\work\\digitalwarfare\\digital-warfare\\digitalwarfare\\menufactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|solutionrelative:digitalwarfare\\menufactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|d:\\work\\digitalwarfare\\digital-warfare\\digitalwarfare\\stringtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|solutionrelative:digitalwarfare\\stringtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|d:\\work\\digitalwarfare\\digital-warfare\\digitalwarfare\\buttongroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|solutionrelative:digitalwarfare\\buttongroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|d:\\work\\digitalwarfare\\digital-warfare\\digitalwarfare\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|solutionrelative:digitalwarfare\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|d:\\work\\digitalwarfare\\digital-warfare\\digitalwarfare\\texttweaks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|solutionrelative:digitalwarfare\\texttweaks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|d:\\work\\digitalwarfare\\digital-warfare\\digitalwarfare\\menustate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|d:\\work\\digitalwarfare\\digital-warfare\\digitalwarfare\\consoletweaks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|solutionrelative:digitalwarfare\\consoletweaks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|d:\\work\\digitalwarfare\\digital-warfare\\digitalwarfare\\stringtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|solutionrelative:digitalwarfare\\stringtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CE253A4-1BE1-42A6-88DC-25DC041969A1}|DigitalWarfare\\DigitalWarfare.csproj|d:\\work\\digitalwarfare\\digital-warfare\\digitalwarfare\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\Program.cs",
               "RelativeDocumentMoniker": "DigitalWarfare\\Program.cs",
@@ -62,51 +66,51 @@
               "IsPinned": true
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PilotGame.cs",
+              "DocumentMoniker": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\PilotGame.cs",
+              "RelativeDocumentMoniker": "DigitalWarfare\\PilotGame.cs",
+              "ToolTip": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\PilotGame.cs",
+              "RelativeToolTip": "DigitalWarfare\\PilotGame.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAuwEwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T19:34:59.747Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ButtonGroup.cs",
-              "DocumentMoniker": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\ButtonGroup.cs",
-              "RelativeDocumentMoniker": "DigitalWarfare\\ButtonGroup.cs",
-              "ToolTip": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\ButtonGroup.cs",
-              "RelativeToolTip": "DigitalWarfare\\ButtonGroup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T21:41:37.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "MenuFactory.cs",
               "DocumentMoniker": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\MenuFactory.cs",
               "RelativeDocumentMoniker": "DigitalWarfare\\MenuFactory.cs",
               "ToolTip": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\MenuFactory.cs",
               "RelativeToolTip": "DigitalWarfare\\MenuFactory.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAiwDMAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T14:38:29.425Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MenuManager.cs",
               "DocumentMoniker": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\MenuManager.cs",
               "RelativeDocumentMoniker": "DigitalWarfare\\MenuManager.cs",
               "ToolTip": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\MenuManager.cs",
               "RelativeToolTip": "DigitalWarfare\\MenuManager.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAcwHkAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAqwG0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-09T20:52:11.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "MenuState.cs",
               "DocumentMoniker": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\MenuState.cs",
               "RelativeDocumentMoniker": "DigitalWarfare\\MenuState.cs",
@@ -114,12 +118,11 @@
               "RelativeToolTip": "DigitalWarfare\\MenuState.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T20:48:24.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T20:48:24.435Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ConsoleTweaks.cs",
               "DocumentMoniker": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\ConsoleTweaks.cs",
               "RelativeDocumentMoniker": "DigitalWarfare\\ConsoleTweaks.cs",
@@ -127,44 +130,53 @@
               "RelativeToolTip": "DigitalWarfare\\ConsoleTweaks.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T22:03:33.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T22:03:33.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "TextTweaks.cs",
               "DocumentMoniker": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\TextTweaks.cs",
               "RelativeDocumentMoniker": "DigitalWarfare\\TextTweaks.cs",
               "ToolTip": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\TextTweaks.cs",
               "RelativeToolTip": "DigitalWarfare\\TextTweaks.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAADwv1wAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAADwv1oAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T10:58:04.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T10:58:04.18Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Button.cs",
               "DocumentMoniker": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\Button.cs",
               "RelativeDocumentMoniker": "DigitalWarfare\\Button.cs",
               "ToolTip": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\Button.cs",
               "RelativeToolTip": "DigitalWarfare\\Button.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAADwvw8AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T20:14:29.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T20:14:29.119Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
+              "Title": "ButtonGroup.cs",
+              "DocumentMoniker": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\ButtonGroup.cs",
+              "RelativeDocumentMoniker": "DigitalWarfare\\ButtonGroup.cs",
+              "ToolTip": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\ButtonGroup.cs",
+              "RelativeToolTip": "DigitalWarfare\\ButtonGroup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:41:37.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "StringText.cs",
               "DocumentMoniker": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\StringText.cs",
               "RelativeDocumentMoniker": "DigitalWarfare\\StringText.cs",
               "ToolTip": "D:\\Work\\DigitalWarfare\\Digital-Warfare\\DigitalWarfare\\StringText.cs",
               "RelativeToolTip": "DigitalWarfare\\StringText.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAADwv2MAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAADwv2MAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-09T21:11:13.734Z"
             }

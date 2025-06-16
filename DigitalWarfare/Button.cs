@@ -17,14 +17,15 @@ namespace DigitalWarfare
 
         public Action OnClick;
 
-        public Button(int x, int y, string text, ConsoleColor colour, bool selected, bool centered)
+        public Button(int x, int y, string text, ConsoleColor colour, bool centered)
         {
             X = x;
             Y = y;
             Text = text;
             Colour = colour;
-            Selected = selected;
             Centered = centered;
+
+            Selected = false;
         }
 
         public int X
